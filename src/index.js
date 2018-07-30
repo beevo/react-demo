@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//default import name
+// import App from './App';
+import Pet from './Pet';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Pet />, document.getElementById('root'));
 registerServiceWorker();

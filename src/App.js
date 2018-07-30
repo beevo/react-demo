@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+//React is default component, brackets means its not default
 import logo from './logo.svg';
 import './App.css';
 
@@ -9,7 +10,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">
-            Hello World
+            Hello World!
           </h1>
         </header>
         <p className="App-intro">
