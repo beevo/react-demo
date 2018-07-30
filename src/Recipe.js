@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
-
+import './Recipe.css';
 class Recipe extends Component {
     render(){
+        // using props (params given in Recipe tag)
         // const title = this.props.title; // ^
         const {title, img, instructions} = this.props; //destructuring! es5
         const ingredients = this.props.ingredients.map((ing,index) => (
             <li key={index}> {ing} </li>    
         ));
         return(
-            <div>
-                <div>Recipe: {title} </div>
-                <ul>
-                    {ingredients}
-                </ul>
-                <p>
-                    {instructions}
-                    <br />
+            <div className="recipe-card">
+                <div className="recipe-card-img">
                     <img src={img} alt={title} />
-                </p>
+                </div>
+                <div className="recipe-card-content">
+                    <h3 className="recipe-title">Recipe:: {title} </h3>
+                    <h4>{instructions}</h4>
+                    <ul>
+                        {ingredients}
+                    </ul>
+                </div>
             </div>
         )
     }
